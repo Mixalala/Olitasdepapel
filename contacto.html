@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Formulario de contacto</title>
+  <nav>
+	<a href="index.html" target="_self">Empresa</a>
+	<a href="productos.html" title="Productos">Productos</a>
+	<a href="contacto.html" target="_self">Contactanos</a>
+	<a href="galeria.html" target="_blank">Galeria</a>
+</nav>
+</head>
+<body>
+    <style>
+		body {
+		  background-image: url('background.jpg');
+		}
+		</style>
+  <h2>Formulario de contacto</h2>
+        <form action="show_data.html" target="_blank">
+            <label for="nickname">Sobrenombre:</label><input type="text" name="nickname" id="nickname">
+            <label for="firstname">Nombre: </label><input type="text" name="firstname" id="firstname"  placeholder="Ingrese su nombre aqui..."> <br><br>
+            <label for="lastname">Apellido:</label><input type="text" name="lastname"  id="lastname"   placeholder="Ingrese su apellido aqui..."> <br><br>
+            <label for="street">Direccion:</label><input type="text"  name="address"   id="address"    placeholder="Ingrese su dirección aqui..."> <br><br>
+            <label for="number">Numero:</label><input type="number"   name="number"    id="number"     placeholder="Ingrese el numero..">
+            <br><br>
+            <label for="city">Ciudad:</label>           <input type="text"     name="city"      id="city"     value="C.A.B.A."> <br><br>
+            <label for="zipcode">Código Postal:</label> <input type="text"     name="zipcode"   id="zipcode"  placeholder="Ingrese su codigo postal aqui..."> <br> <br>
+            <label for="telefono">Telefono:</label>     <input type="tel"      name="telefono"  id="telefono" placeholder="ingrese su telefono aqui ...."> <br><br>
+            <label for="BirthDate">Fecha Nac.:</label>  <input type="date"     name="birthdate" id="birthdate" > <br><br>
+            
+            <label for="gender">Genero: (Radio)</label> 
+                <input type="radio" name="gender" value="Hombre" id="hombre" checked>Hombre
+                <input type="radio" name="gender" value="Mujer"  id="mujer" >Mujer
+                <input type="radio" name="gender" value="Otro"   id="otro"  >Otro
+                <input type="radio" name="gender" value="prueba" id="prueba">
+            <label for="Evento"></label><p> Evento: (checkbox)
+                <input type="checkbox" name="Evento" value="Cumpleaños"> Cumpleaños
+                <input type="checkbox" name="Evento" value="Cumpleaños Infantil"> Cumpleaños Infantil
+                <input type="checkbox" name="Evento" value="Fiesta de 15"> Fiesta de 15
+                <input type="checkbox" name="Evento" value="Recibida"> Recibida
+                <input type="checkbox" name="Evento" value="Despedida de soltera"> Despedida de soltera
+                <input type="checkbox" name="Evento" value="Boda"> Boda
+                <input type="checkbox" name="Evento" value="Baby Shower"> Baby Shower
+            
+        
+
+            <p><label for="Tipo de box"> Tipo de box: (Select)</label>
+            <select id="Tipo de box" name="Tipo de box">
+                <option value="Individual">Individual</option>
+                <option value="Pareja">Pareja</option>
+                <option value="+5 personas">+5 personas</option>
+                <option value="+10 personas">+10 personas</option> </p>
+            </select>
+            <br>
+
+            <label for="comentarios">Comentarios:</label> <textarea name="comentarios" rows="10" cols="30"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+        <p>Si usted hace click en el boton "Enviar", la informacion sera enviada a la pagina "show_data.html".</p>
+  
+</body>
+</html>
